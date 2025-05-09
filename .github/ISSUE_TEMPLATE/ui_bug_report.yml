@@ -1,19 +1,19 @@
-name: 🎨 UI/Frontend Bug Report
-description: Report a visual glitch or user interface issue.
-title: "[UI BUG] Brief description of the UI issue"
-labels: ["bug", "frontend", "ui/ux"]
+name: Export/Delivery issue
+description: Report an issue with deliveries
+title: "[Export/Delivery] "
+labels: ["bug", "export"]
 assignees:
   - octocat # Replace with actual usernames if desired
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this UI bug report!
+        We're sorry about the issue. Let's get it fixed!
         Please provide as much detail as possible.
   - type: textarea
     id: description
     attributes:
-      label: Bug Description
+      label: Issue Description
       description: Provide a clear and concise description of what the visual bug is.
       placeholder: "Example: The main login button is overlapping the text field on smaller screens."
     validations:
@@ -66,8 +66,3 @@ body:
       description: Please add screenshots or links to screencasts (e.g., Loom, Giphy) demonstrating the problem. This is extremely helpful!
     validations:
       required: false
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Is there anything else relevant? (e.g., specific user account type, specific data being viewed)
