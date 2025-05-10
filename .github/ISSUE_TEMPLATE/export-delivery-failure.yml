@@ -16,7 +16,7 @@ body:
 
         > ℹ️ **Tip:** The more precise the information, the faster we can help.
 
-- type: input
+  - type: input
     id: release-id
     attributes:
       label: "Release Name / ID / UPC 🏷️"
