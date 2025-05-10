@@ -1,11 +1,11 @@
 name: "Export/Delivery Failure Report"
-about: "Report an issue related to a failure in exporting or delivering a release."
+description: "Report an issue related to a failure in exporting or delivering a release."
 title: "[DELIVERY FAILURE]: Release [Release Name/ID] failed to export/deliver to [Platform/Service]"
 labels:
   - "bug"
   - "delivery"
   - "needs-investigation"
-assignees: ""
+assignees: []
 body:
   - type: markdown
     attributes:
