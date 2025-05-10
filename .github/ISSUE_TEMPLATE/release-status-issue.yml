@@ -1,11 +1,11 @@
 name: "Release Status Inquiry/Issue"
-about: "Report an issue or inquire about the status of a specific release."
+description: "Report an issue or inquire about the status of a specific release."
 title: "[RELEASE STATUS]: Inquiry for Release [Release Name/ID]"
 labels:
   - "release-management"
   - "status-inquiry"
   - "content-ops"
-assignees: ""
+assignees: []
 body:
   - type: markdown
     attributes:
