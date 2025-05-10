@@ -1,0 +1,77 @@
+name: "User Email Change Request/Issue (Kratos)"
+about: "Report an issue or request related to changing a user's email address in the Kratos system."
+title: "[EMAIL CHANGE]: User [User ID/Current Email] - [Request/Issue Summary]"
+labels:
+  - "account-management"
+  - "kratos"
+  - "user-support"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please provide details for the email change request or issue.**
+
+  - type: input
+    id: user-id-current-email
+    attributes:
+      label: "User ID / Current Email Address"
+      description: "The ID or current email of the user affected."
+      placeholder: "e.g., user_123abc / current.email@example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: new-email
+    attributes:
+      label: "New Email Address (if a change request)"
+      description: "The desired new email address for the user."
+      placeholder: "new.email@example.com"
+    validations:
+      required: false # Not required if it's reporting an issue with an *attempted* change
+
+  - type: textarea
+    id: reason-description
+    attributes:
+      label: "Reason for Change / Description of Issue"
+      description: "Explain why the email needs to be changed or describe the issue encountered."
+      placeholder: "e.g., User typo during signup, User lost access to old email, Error when attempting to change email."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-message-kratos
+    attributes:
+      label: "Error Messages Encountered (if any)"
+      description: "If an error occurred, please provide the exact message."
+      placeholder: "e.g., 'Email address already in use'"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: user-confirmation
+    attributes:
+      label: "User Confirmation (for manual changes)"
+      description: "If this is a manual change request on behalf of a user:"
+      options:
+        - label: "User has confirmed this change request (e.g., via email thread, ticket)."
+          required: false
+        - label: "Proof of identity/ownership verified (if applicable)."
+          required: false
+
+  - type: input
+    id: reporter-slack-username
+    attributes:
+      label: "Reporter Slack Username (from v4soldiers)"
+      description: "Your Slack username for follow-up questions."
+      placeholder: "@yourname"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Any other relevant information."
+    validations:
+      required: false
