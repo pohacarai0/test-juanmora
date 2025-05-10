@@ -45,7 +45,7 @@ body:
   - type: textarea
     id: error-message
     attributes:
-      label: "Error Message Received (if any) :envelope_with_arrow:"
+      label: "Error Message Received (if any) 📩 # Unicode emoji
       description: |
         Please copy and paste the **exact error message**.
         If no error message was shown, describe what happened when you expected the error.
