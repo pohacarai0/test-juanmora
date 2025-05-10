@@ -65,15 +65,6 @@ body:
       required: false
 
   - type: textarea
-    id: error-message
-    attributes:
-      label: "Error Message Received (if any)"
-      description: "Please copy and paste the exact error message."
-      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
-    validations:
-      required: false
-
-  - type: textarea
     id: expected-outcome
     attributes:
       label: "Expected Outcome"
