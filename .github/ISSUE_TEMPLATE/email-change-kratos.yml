@@ -1,11 +1,11 @@
 name: "User Email Change Request/Issue (Kratos)"
-about: "Report an issue or request related to changing a user's email address in the Kratos system."
+description: "Report an issue or request related to changing a user's email address in the Kratos system."
 title: "[EMAIL CHANGE]: User [User ID/Current Email] - [Request/Issue Summary]"
 labels:
   - "account-management"
   - "kratos"
   - "user-support"
-assignees: ""
+assignees: []
 body:
   - type: markdown
     attributes:
