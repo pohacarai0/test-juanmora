@@ -10,13 +10,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Please provide details about the export or delivery failure.**
+        ## :rotating_light: Export/Delivery Failure :rotating_light:
+        ---
+        Please provide as much detail as possible about the export or delivery failure. This will help us investigate and resolve the issue quickly!
+
+        > :information_source: **Tip:** The more precise the information, the faster we can help.
 
   - type: input
     id: release-id
     attributes:
-      label: "Release Name / ID / UPC"
-      description: "The unique identifier for the release that failed."
+      label: "Release Name / ID / UPC :label:" # Added emoji
+      description: | # Using a multi-line description for better formatting
+        Provide the **unique identifier** for the release that failed.
+        * Example Release Name: `My Awesome Album`
+        * Example Release ID: `R_123xyz`
+        * Example UPC: `198001234567`
       placeholder: "e.g., My Album / R_123xyz / 198001234567"
     validations:
       required: true
@@ -24,11 +32,28 @@ body:
   - type: input
     id: platform-service
     attributes:
-      label: "Platform/Service Affected"
-      description: "Which digital service provider (DSP) or platform is affected? (e.g., Spotify, Apple Music, All DSPs)"
+      label: "Platform/Service Affected :computer:"
+      description: |
+        Which Digital Service Provider (DSP) or platform is affected?
+        * Be specific, e.g., `Spotify`, `Apple Music`.
+        * If all, write `All DSPs`.
       placeholder: "e.g., Spotify"
     validations:
       required: true
+
+  - type: textarea
+    id: error-message
+    attributes:
+      label: "Error Message Received (if any) :envelope_with_arrow:"
+      description: |
+        Please copy and paste the **exact error message**.
+        If no error message was shown, describe what happened when you expected the error.
+        ```text
+        Example: "Failed due to metadata mismatch: track 3 artist name"
+        ```
+      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
+    validations:
+      required: false
 
   - type: input
     id: attempt-date
