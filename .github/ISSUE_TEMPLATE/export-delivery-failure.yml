@@ -75,7 +75,7 @@ body:
       required: true
 
   - type: textarea
-    id: error-message
+    id: error-message2
     attributes:
       label: "Error Message Received (if any) 📩" # Unicode emoji
       description: |
