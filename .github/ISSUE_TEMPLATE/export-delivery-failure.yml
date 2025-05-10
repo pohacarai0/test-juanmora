@@ -1,0 +1,84 @@
+name: "Export/Delivery Failure Report"
+about: "Report an issue related to a failure in exporting or delivering a release."
+title: "[DELIVERY FAILURE]: Release [Release Name/ID] failed to export/deliver to [Platform/Service]"
+labels:
+  - "bug"
+  - "delivery"
+  - "needs-investigation"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please provide details about the export or delivery failure.**
+
+  - type: input
+    id: release-id
+    attributes:
+      label: "Release Name / ID / UPC"
+      description: "The unique identifier for the release that failed."
+      placeholder: "e.g., My Album / R_123xyz / 198001234567"
+    validations:
+      required: true
+
+  - type: input
+    id: platform-service
+    attributes:
+      label: "Platform/Service Affected"
+      description: "Which digital service provider (DSP) or platform is affected? (e.g., Spotify, Apple Music, All DSPs)"
+      placeholder: "e.g., Spotify"
+    validations:
+      required: true
+
+  - type: input
+    id: attempt-date
+    attributes:
+      label: "Date of Attempted Delivery/Export"
+      description: "When was the delivery or export attempted?"
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: textarea
+    id: error-message
+    attributes:
+      label: "Error Message Received (if any)"
+      description: "Please copy and paste the exact error message."
+      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: "Expected Outcome"
+      description: "What did you expect to happen?"
+      placeholder: "The release should be successfully delivered to the specified platform."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-outcome
+    attributes:
+      label: "Actual Outcome"
+      description: "What actually happened?"
+      placeholder: "The delivery failed with an error / The release is not appearing on the platform."
+    validations:
+      required: true
+
+  - type: input
+    id: reporter-slack-username
+    attributes:
+      label: "Reporter Slack Username (from v4soldiers)"
+      description: "Your Slack username for follow-up questions."
+      placeholder: "@yourname"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context / Screenshots"
+      description: "Add any other context about the problem here. You can drag and drop screenshots."
+    validations:
+      required: false
