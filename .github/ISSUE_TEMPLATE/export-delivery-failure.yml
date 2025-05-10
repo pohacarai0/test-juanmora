@@ -10,17 +10,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## :rotating_light: Export/Delivery Failure :rotating_light:
+        ## 🚨 Export/Delivery Failure 🚨
         ---
         Please provide as much detail as possible about the export or delivery failure. This will help us investigate and resolve the issue quickly!
 
-        > :information_source: **Tip:** The more precise the information, the faster we can help.
+        > ℹ️ **Tip:** The more precise the information, the faster we can help.
 
   - type: input
     id: release-id
     attributes:
-      label: "Release Name / ID / UPC :label:" # Added emoji
-      description: | # Using a multi-line description for better formatting
+      label: "Release Name / ID / UPC 🏷️" # Unicode emoji
+      description: |
         Provide the **unique identifier** for the release that failed.
         * Example Release Name: `My Awesome Album`
         * Example Release ID: `R_123xyz`
@@ -29,15 +29,16 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: platform-service
+  - type: dropdown # Changed from 'input'
+    id: platform-affected # Using a new ID or you can reuse 'platform-service'
     attributes:
-      label: "Platform/Service Affected :computer:"
-      description: |
-        Which Digital Service Provider (DSP) or platform is affected?
-        * Be specific, e.g., `Spotify`, `Apple Music`.
-        * If all, write `All DSPs`.
-      placeholder: "e.g., Spotify"
+      label: "Platform Affected 💻" # Unicode emoji
+      description: "Please select the platform where the issue occurred. If it's not listed, choose 'Other'."
+      options:
+        - CID
+        - KNM
+        - YTM
+        - Other (Please specify in 'Additional Context' or a dedicated field if added)
     validations:
       required: true
 
@@ -56,9 +57,9 @@ body:
       required: false
 
   - type: input
-    id: attempt-date
+    id: attempt-date # Assuming this was your next field for 'Date of Attempted Delivery/Export'
     attributes:
-      label: "Date of Attempted Delivery/Export"
+      label: "Date of Attempted Delivery/Export 📅" # Unicode emoji for calendar
       description: "When was the delivery or export attempted?"
       placeholder: "YYYY-MM-DD"
     validations:
@@ -72,6 +73,20 @@ body:
       placeholder: "The release should be successfully delivered to the specified platform."
     validations:
       required: true
+
+  - type: textarea
+    id: error-message
+    attributes:
+      label: "Error Message Received (if any) 📩" # Unicode emoji
+      description: |
+        Please copy and paste the **exact error message**.
+        If no error message was shown, describe what happened when you expected the error.
+        ```text
+        Example: "Failed due to metadata mismatch: track 3 artist name"
+        ```
+      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
+    validations:
+      required: false
 
   - type: textarea
     id: actual-outcome
