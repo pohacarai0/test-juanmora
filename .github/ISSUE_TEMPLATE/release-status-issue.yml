@@ -1,0 +1,84 @@
+name: "Release Status Inquiry/Issue"
+about: "Report an issue or inquire about the status of a specific release."
+title: "[RELEASE STATUS]: Inquiry for Release [Release Name/ID]"
+labels:
+  - "release-management"
+  - "status-inquiry"
+  - "content-ops"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please provide details about the release status you are inquiring about or having issues with.**
+
+  - type: input
+    id: release-id-upc
+    attributes:
+      label: "Release Name / ID / UPC/EAN"
+      description: "The unique identifier for the release."
+      placeholder: "e.g., My EP / R_456def / 198007654321"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: current-expected-status
+    attributes:
+      label: "Current Displayed/Expected Status in System"
+      description: "What status does our system currently show for this release, or what do you expect it to be?"
+      options:
+        - "Submitted"
+        - "Processing/Ingestion"
+        - "Live"
+        - "Takedown Pending"
+        - "Takedown Complete"
+        - "Error/Failed"
+        - "Rejected"
+        - "Action Required"
+        - "Unknown/Not Found"
+    validations:
+      required: false
+
+  - type: textarea
+    id: observed-issue
+    attributes:
+      label: "Observed Status / Issue Description"
+      description: "Describe the issue or what you observe regarding the release's status."
+      placeholder: "e.g., System shows 'Live' but release not found on Spotify; Status stuck on 'Processing' for 3 days; Received 'Error' status with no details."
+    validations:
+      required: true
+
+  - type: input
+    id: specific-platforms
+    attributes:
+      label: "Specific Platform(s) (if issue is platform-dependent)"
+      description: "If the issue is only on certain DSPs, list them here."
+      placeholder: "e.g., Spotify, Deezer"
+    validations:
+      required: false
+
+  - type: input
+    id: submission-date
+    attributes:
+      label: "Date of Submission / Last Known Status Update"
+      description: "When was the release submitted or when did the status last change?"
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: reporter-slack-username
+    attributes:
+      label: "Reporter Slack Username (from v4soldiers)"
+      description: "Your Slack username for follow-up questions."
+      placeholder: "@yourname"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context / Screenshots"
+      description: "e.g., Link to release on DSP if found, screenshots of error messages."
+    validations:
+      required: false
