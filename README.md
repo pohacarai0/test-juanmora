@@ -6,9 +6,6 @@ Welcome to the `iMusicianOps/desk` repository!
 
 **(➡️ You need to fill this part in! ⬅️)**
 *Example: This repository is used by the iMusician Operations team to track and manage internal tasks, report platform bugs, and coordinate support efforts related to our main platform.*
-*Or: This project contains the tools and scripts used by our Customer Service team to streamline their workflows.*
-
-Please provide a clear, concise description of what the `desk` repository is for.
 
 ## Key Goals / Features
 
@@ -17,9 +14,25 @@ Please provide a clear, concise description of what the `desk` repository is for
 * **(Example) Centralizing documentation for operational procedures.**
     *(Adjust these to reflect the actual goals of your repository)*
 
+## 📚 Latest Feature Documentation
+
+To help you understand the latest updates and determine if an issue you're seeing might be a new feature working as intended, please check the documentation for recent projects:
+
+* **Project Phoenix (Deployed May 2025):**
+    * [User Guide for Phoenix Dashboard](https://your-company-wiki.com/phoenix-dashboard-guide)
+    * [Technical Overview of Phoenix Changes](https://your-company-wiki.com/phoenix-tech-overview)
+* **Feature Cheetah (Rolled out April 2025):**
+    * [How to use the new Cheetah reporting tool](https://docs.google.com/document/d/your-doc-id-here)
+* **Update Zebra (Live since March 2025):**
+    * [Understanding the Zebra Workflow Adjustments](https://your-internal-sharepoint.com/zebra-workflow)
+
+*(➡️ Remember to replace these with actual links and project names! You can add or remove projects as needed. Keep this list updated as new features roll out.)*
+
 ## 📄 How to Report Bugs or Suggest Improvements
 
-Your feedback is crucial for improving our platform and internal tools!
+Before reporting, please quickly check the **[Latest Feature Documentation](#-latest-feature-documentation)** above to see if the behavior you're observing is part of a recent update.
+
+If you still believe you've found a bug, or if you have an idea for an improvement:
 
 * **Found a bug?** 🐞 Please help us by reporting it!
 * **Have an idea for an improvement?** ✨ We'd love to hear it!
@@ -30,3 +43,4 @@ Your feedback is crucial for improving our platform and internal tools!
 
 ---
 
+*If you have other sections you think would be helpful, like "Who to contact for help?" or "Links to related tools," feel free to add them!*
