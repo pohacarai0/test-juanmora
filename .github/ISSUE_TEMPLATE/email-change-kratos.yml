@@ -1,10 +1,8 @@
-name: "User Email Change Request/Issue (Kratos)"
-description: "Report an issue or request related to changing a user's email address in the Kratos system."
-title: "[EMAIL CHANGE]: User [User ID/Current Email] - [Request/Issue Summary]"
+name: "🔑 User Email Change Request"
+description: "Use this template ONLY to request a change to a user's email address."
+title: "[EMAIL CHANGE]: Customer [Customer ID]"
 labels:
-  - "account-management"
   - "kratos"
-  - "user-support"
 assignees: []
 body:
   - type: markdown
@@ -13,19 +11,28 @@ body:
         **Please provide details for the email change request or issue.**
 
   - type: input
-    id: user-id-current-email
+    id: customer-id
     attributes:
-      label: "User ID / Current Email Address"
-      description: "The ID or current email of the user affected."
-      placeholder: "e.g., user_123abc / current.email@example.com"
+      label: "Customer ID"
+      description: "The ID from our system"
+      placeholder: "e.g., 123456"
     validations:
       required: true
 
   - type: input
-    id: new-email
+    id: customer-current-email
     attributes:
-      label: "New Email Address (if a change request)"
-      description: "The desired new email address for the user."
+      label: "Current Email Address"
+      description: "The current email of our customer, to which he should have not have access."
+      placeholder: "e.g., current.email@example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: customer-desired-email
+    attributes:
+      label: ""New" Email Address"
+      description: "The desired new email address our customer wants."
       placeholder: "new.email@example.com"
     validations:
       required: false # Not required if it's reporting an issue with an *attempted* change
@@ -33,26 +40,16 @@ body:
   - type: textarea
     id: reason-description
     attributes:
-      label: "Reason for Change / Description of Issue"
-      description: "Explain why the email needs to be changed or describe the issue encountered."
+      label: "Reason for Change"
+      description: "Explain why the email needs to be changed by ourselves and not via the self-service solution provided on our dashboard."
       placeholder: "e.g., User typo during signup, User lost access to old email, Error when attempting to change email."
     validations:
       required: true
-
-  - type: textarea
-    id: error-message-kratos
-    attributes:
-      label: "Error Messages Encountered (if any)"
-      description: "If an error occurred, please provide the exact message."
-      placeholder: "e.g., 'Email address already in use'"
-    validations:
-      required: false
 
   - type: checkboxes
     id: user-confirmation
     attributes:
       label: "User Confirmation (for manual changes)"
-      description: "If this is a manual change request on behalf of a user:"
       options:
         - label: "User has confirmed this change request (e.g., via email thread, ticket)."
           required: false
