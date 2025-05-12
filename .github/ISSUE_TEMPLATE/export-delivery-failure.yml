@@ -16,7 +16,7 @@ body:
   - type: input
     id: db-id
     attributes:
-      label: "Release ID"
+      label: "Delivery Bundle ID"
       description: |
         Provide the **id of the delivery bundle** containing the delivery that is failing.
 
@@ -44,6 +44,24 @@ body:
     validations:
       required: false 
 
+  - type: input
+    id: delivery-id
+    attributes:
+      label: "Delivery ID"
+      description: |
+        Provide the **id of the delivery** that is failing.
+
+        <details>
+        <summary>❓ Click here to see where to find this information</summary>
+
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
+        
+        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
+        </details>
+      placeholder: "e.g., 123456"
+    validations:
+      required: true
+
   - type: textarea
     id: error-message
     attributes:
@@ -62,15 +80,6 @@ body:
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
       placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
-    validations:
-      required: false
-
-  - type: input
-    id: attempt-date # Assuming this was your next field for 'Date of Attempted Delivery/Export'
-    attributes:
-      label: "Date of Attempted Delivery/Export 📅" # Unicode emoji for calendar
-      description: "When was the delivery or export attempted?"
-      placeholder: "YYYY-MM-DD"
     validations:
       required: false
 
