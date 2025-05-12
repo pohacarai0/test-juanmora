@@ -9,7 +9,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        ---
         Please provide as much detail as possible about the export or delivery failure. This will help us investigate and resolve the issue quickly!
 
         > ℹ️ **Tip:** The more precise the information, the faster we can help.
@@ -28,7 +27,7 @@ body:
         
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
-      placeholder: "e.g., R_123xyz / 198001234567"
+      placeholder: "e.g., 123456"
     validations:
       required: true
 
@@ -42,7 +41,8 @@ body:
         - label: "YTM (Aspera)"
         - label: "YTM (Lambda)"        
         - label: "CID"        
-          required: true      
+    validations:
+      required: false 
 
   - type: textarea
     id: error-message
