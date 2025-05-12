@@ -84,47 +84,6 @@ body:
       required: false
 
   - type: textarea
-    id: expected-outcome
-    attributes:
-      label: "Expected Outcome"
-      description: "What did you expect to happen?"
-      placeholder: "The release should be successfully delivered to the specified platform."
-    validations:
-      required: true
-
-  - type: textarea
-    id: error-message2
-    attributes:
-      label: "Error Message Received (if any) 📩" # Unicode emoji
-      description: |
-        Please copy and paste the **exact error message**.
-        If no error message was shown, describe what happened when you expected the error.
-        ```text
-        Example: "Failed due to metadata mismatch: track 3 artist name"
-        ```
-      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
-    validations:
-      required: false
-
-  - type: textarea
-    id: actual-outcome
-    attributes:
-      label: "Actual Outcome"
-      description: "What actually happened?"
-      placeholder: "The delivery failed with an error / The release is not appearing on the platform."
-    validations:
-      required: true
-
-  - type: input
-    id: reporter-slack-username
-    attributes:
-      label: "Reporter Slack Username (from v4soldiers)"
-      description: "Your Slack username for follow-up questions."
-      placeholder: "@yourname"
-    validations:
-      required: true
-
-  - type: textarea
     id: additional-context
     attributes:
       label: "Additional Context / Screenshots"
