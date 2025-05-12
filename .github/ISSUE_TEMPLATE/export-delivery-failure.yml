@@ -1,6 +1,6 @@
 name: "🚚 Export/Delivery Failure Report"
 description: "Report an issue related to a failure in exporting a release, either delivering or taking-down."
-title: "[DELIVERY FAILURE]: Release [Release Name/ID] failed to export/deliver to [Platform/Service]"
+title: "[DELIVERY FAILURE]: Release [Release ID] failed to export/deliver"
 labels:
   - "needs-triage"
 assignees: []
@@ -33,7 +33,7 @@ body:
       required: true
 
   - type: checkboxes
-    id: handler affected
+    id: handler-affected
     attributes:
       label: "Handler affected"
       description: "Select the ones that are failing"
