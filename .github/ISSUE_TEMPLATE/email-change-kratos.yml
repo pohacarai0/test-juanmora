@@ -33,15 +33,6 @@ body:
     validations:
       required: false # Not required if it's reporting an issue with an *attempted* change
 
-  - type: textarea
-    id: reason-description
-    attributes:
-      label: "Reason for Change"
-      description: "Explain why the email needs to be changed by ourselves and not via the self-service solution provided on our dashboard."
-      placeholder: "e.g., User typo during signup, User lost access to old email, Error when attempting to change email."
-    validations:
-      required: true
-
   - type: checkboxes
     id: user-confirmation-change-email
     attributes:
@@ -61,3 +52,12 @@ body:
       options:
         - label: "There is no account created on our system using the e-mail provided at ''New' Email Address' "
           required: true
+
+     - type: textarea
+    id: reason-description
+    attributes:
+      label: "Reason for Change"
+      description: "Explain why the email needs to be changed by ourselves and not via the self-service solution provided on our dashboard."
+      placeholder: "e.g., User typo during signup, User lost access to old email, Error when attempting to change email."
+    validations:
+      required: true       
