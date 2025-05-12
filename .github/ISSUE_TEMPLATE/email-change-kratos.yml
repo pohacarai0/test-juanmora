@@ -53,7 +53,7 @@ body:
         - label: "There is no account created on our system using the e-mail provided at ''New' Email Address' "
           required: true
 
-     - type: textarea
+  - type: textarea
     id: reason-description
     attributes:
       label: "Reason for Change"
