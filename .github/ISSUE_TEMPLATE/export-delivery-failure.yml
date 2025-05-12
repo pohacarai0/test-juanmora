@@ -87,7 +87,6 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label: "Additional Context / Screenshots"
-      description: "Add any other context about the problem here. You can drag and drop screenshots."
+      label: "Additional Info"
     validations:
       required: false
