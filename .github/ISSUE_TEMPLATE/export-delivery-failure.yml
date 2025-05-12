@@ -88,5 +88,6 @@ body:
     id: additional-context
     attributes:
       label: "Additional Info"
+    placeholder: "Leave a comment if needed"
     validations:
       required: false
