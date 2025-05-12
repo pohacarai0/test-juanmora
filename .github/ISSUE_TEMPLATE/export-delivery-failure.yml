@@ -42,7 +42,7 @@ body:
         - label: "YTM (Lambda)"        
         - label: "CID"        
     validations:
-      required: true 
+      required: false 
 
   - type: textarea
     id: error-message
@@ -50,10 +50,17 @@ body:
       label: "Error Message Received (if any) 📩" # Unicode emoji
       description: |
         Please copy and paste the **exact error message**.
-        If no error message was shown, describe what happened when you expected the error.
+        If no manifest file is available please write 'No manifest'.
         ```text
         Example: "Failed due to metadata mismatch: track 3 artist name"
         ```
+        <details>
+        <summary>❓ Click here to see where to find this information</summary>
+
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
+        
+        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
+        </details>
       placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
     validations:
       required: false
