@@ -65,11 +65,3 @@ body:
       options:
         - label: "There is no account created on our system using the e-mail provided at ''New' Email Address' "
           required: true
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: "Additional Context"
-      description: "Any other relevant information."
-    validations:
-      required: false
