@@ -42,7 +42,7 @@ body:
         - label: "YTM (Lambda)"        
         - label: "CID"        
     validations:
-      required: false 
+      required: true 
 
   - type: textarea
     id: error-message
