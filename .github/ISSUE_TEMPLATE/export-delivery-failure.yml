@@ -1,27 +1,24 @@
-name: "Export/Delivery Failure Report"
-description: "Report an issue related to a failure in exporting or delivering a release."
+name: "🚚 Export/Delivery Failure Report"
+description: "Report an issue related to a failure in exporting a release, either delivering or taking-down."
 title: "[DELIVERY FAILURE]: Release [Release Name/ID] failed to export/deliver to [Platform/Service]"
 labels:
-  - "bug"
-  - "delivery"
-  - "needs-investigation"
+  - "needs-triage"
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🚨 Export/Delivery Failure 🚨
         ---
         Please provide as much detail as possible about the export or delivery failure. This will help us investigate and resolve the issue quickly!
 
         > ℹ️ **Tip:** The more precise the information, the faster we can help.
 
   - type: input
-    id: release-id
+    id: db-id
     attributes:
-      label: "Release Name / ID / UPC 🏷️"
+      label: "Release ID"
       description: |
-        Provide the **unique identifier** for the release (e.g., Release ID or UPC).
+        Provide the **id of the delivery bundle** containing the delivery that is failing.
 
         <details>
         <summary>❓ Click here to see where to find this information</summary>
@@ -43,7 +40,6 @@ body:
         - CID
         - KNM
         - YTM
-        - Other (Please specify in 'Additional Context' or a dedicated field if added)
     validations:
       required: true
 
