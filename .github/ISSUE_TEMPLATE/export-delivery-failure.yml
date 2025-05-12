@@ -70,7 +70,7 @@ body:
         Please copy and paste the **exact error message**.
         If no manifest file is available please write 'No manifest'.
         ```text
-        Example: "Failed due to metadata mismatch: track 3 artist name"
+        Example: "DOMDocument::schemaValidate(): Element 'c_line': [facet 'pattern'] The value '2020 ' is not accepted by the pattern '((19[0-9][0-9])|(20[0-9][0-9])) [^-\s].*'."
         ```
         <details>
         <summary>❓ Click here to see where to find this information</summary>
