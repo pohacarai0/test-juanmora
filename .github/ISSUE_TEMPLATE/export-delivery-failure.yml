@@ -31,17 +31,17 @@ body:
     validations:
       required: true
 
-  - type: dropdown # Changed from 'input'
-    id: platform-affected # Using a new ID or you can reuse 'platform-service'
+  - type: checkboxes
+    id: handler affected
     attributes:
-      label: "Platform Affected 💻" # Unicode emoji
-      description: "Please select the platform where the issue occurred. If it's not listed, choose 'Other'."
+      label: "Handler affected"
+      description: "Select the ones that are failing"
       options:
-        - CID
-        - KNM
-        - YTM
-    validations:
-      required: true
+        - label: "KNM (Kontor)"
+        - label: "YTM (Aspera)"
+        - label: "YTM (Lambda)"        
+        - label: "CID"        
+          required: true      
 
   - type: textarea
     id: error-message
