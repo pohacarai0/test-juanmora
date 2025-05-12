@@ -47,23 +47,24 @@ body:
       required: true
 
   - type: checkboxes
-    id: user-confirmation
+    id: user-confirmation-change-email
     attributes:
       label: "User Confirmation (for manual changes)"
       options:
-        - label: "User has confirmed this change request (e.g., via email thread, ticket)."
-          required: false
+        - label: "User has confirmed this change request (e.g., via HS, communitty, email thread)."
+          required: true
         - label: "Proof of identity/ownership verified (if applicable)."
           required: false
 
-  - type: input
-    id: reporter-slack-username
+  - type: checkboxes
+    id: admin-confirmation-change-email
     attributes:
-      label: "Reporter Slack Username (from v4soldiers)"
-      description: "Your Slack username for follow-up questions."
-      placeholder: "@yourname"
-    validations:
-      required: true
+      label: "Admin Confirmation"
+      description: "Check if perhaps our customer already created an account using the email address he wants us to modify his account to. 
+      If that would be the case, ask him to first modify that to something else, so the address is 'available' "
+      options:
+        - label: "There is no account created on our system using the e-mail provided at ''New' Email Address' "
+          required: true
 
   - type: textarea
     id: additional-context
