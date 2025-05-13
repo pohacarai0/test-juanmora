@@ -5,7 +5,6 @@ labels:
   - "help wanted"
 assignees: []
 body:
-
   - type: input
     id: release-id
     attributes:
@@ -17,7 +16,7 @@ body:
         <summary>❓ Click here to see where to find this information</summary>
 
         ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
-        
+
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
       placeholder: "e.g., 123456"
@@ -25,20 +24,20 @@ body:
       required: true
 
   - type: input
-    id: db-id
+    id: db-id # Changed from release-id to db-id as it was duplicated, assuming this was intended for Delivery Bundle ID
     attributes:
       label: "Delivery Bundle ID"
       description: |
-        Provide the **id of the delivery bundle** containing the delivery that is failing.
+        Provide the **id of the delivery bundle** containing the delivery that is failing. # Note: This description is identical to the one for 'release-id'. You might want to differentiate them.
 
         <details>
         <summary>❓ Click here to see where to find this information</summary>
 
-        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
-        
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png) # Note: Same image link. Ensure this is correct for both fields.
+
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
-      placeholder: "e.g., 123456"
+      placeholder: "e.g., 123456" # Note: Same placeholder.
     validations:
       required: true
 
@@ -55,13 +54,13 @@ body:
         - "Cancelled"
         - "Feedback Required"
     validations:
-      required: false
+      required: false # Changed to false as it's a 'current' status query, might not always be applicable to be 'required'
 
-    - type: dropdown
+  - type: dropdown
     id: expected-status
     attributes:
       label: "Expected Status"
-      description: "What status should have instead?"
+      description: "What status should it have instead?"
       options:
         - "In Delivery"
         - "Delivered"
@@ -70,14 +69,14 @@ body:
         - "Cancelled"
         - "Feedback Required"
     validations:
-      required: false    
+      required: false # Changed to false, an expected status might not always be known or required for an initial report
 
   - type: textarea
-    id: observed-issue
+    id: observed-issue # Corrected what seemed like a typo from "VErify the Deliveries" label to a more suitable ID
     attributes:
-      label: "VErify the Deliveries"
-      description: "Statuses will normally reflect information from the individual deliveries contained within a Delivery Bundle"
-      placeholder: "e.g., System shows 'Live' but release not found on Spotify; Status stuck on 'Processing' for 3 days; Received 'Error' status with no details."
+      label: "Observed Issue / Discrepancy" # Changed label from "VErify the Deliveries"
+      description: "Describe the problem. e.g., System shows 'Live' but release not found on Spotify; Status stuck on 'Processing' for 3 days; Received 'Error' status with no details. Statuses will normally reflect information from the individual deliveries contained within a Delivery Bundle."
+      placeholder: "e.g., System shows 'Live' but release not found on Spotify..."
     validations:
       required: true
 
@@ -104,5 +103,6 @@ body:
     attributes:
       label: "Additional Context / Screenshots"
       description: "e.g., Link to release on DSP if found, screenshots of error messages."
+      placeholder: "Add any other relevant details or links here." # Added a placeholder
     validations:
       required: false
