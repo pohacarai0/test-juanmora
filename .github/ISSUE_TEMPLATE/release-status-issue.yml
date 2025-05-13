@@ -17,7 +17,7 @@ body:
     attributes:
       label: "Release Name / ID / UPC/EAN"
       description: "The unique identifier for the release."
-      <details>
+        <details>
         <summary>❓ Click here to see where to find this information</summary>
 
         ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
