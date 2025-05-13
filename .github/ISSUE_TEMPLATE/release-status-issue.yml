@@ -24,10 +24,10 @@ body:
       required: true
 
     - type: input
-    id: deliverybundle-id
-    attributes:
-      label: "Delivery Bundle ID"
-      description: |
+      id: deliverybundle-id
+      attributes:
+        label: "Delivery Bundle ID"
+        description: |
         
         <details>
         <summary>❓ Click here to see where to find this information</summary>
