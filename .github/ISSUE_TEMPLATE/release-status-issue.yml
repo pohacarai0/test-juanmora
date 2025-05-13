@@ -1,16 +1,10 @@
-name: "Release Status Inquiry/Issue"
-description: "Report an issue or inquire about the status of a specific release."
-title: "[RELEASE STATUS]: Inquiry for Release [Release Name/ID]"
+name: "Release Status Issue"
+description: "Use this form if a specific release has an incorrect status on app/admin"
+title: "[RELEASE STATUS]: Incorrect status on Release [Release ID]"
 labels:
-  - "release-management"
-  - "status-inquiry"
-  - "content-ops"
+  - "help wanted"
 assignees: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        **Please provide details about the release status you are inquiring about or having issues with.**
 
   - type: input
     id: release-id
