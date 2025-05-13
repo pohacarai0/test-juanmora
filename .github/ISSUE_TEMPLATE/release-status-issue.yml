@@ -12,13 +12,13 @@ body:
         label: "Release ID"
         description:
         
-         <details>
+          <details>
         <summary>❓ Click here to see where to find this information</summary>
 
         ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
         
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
-         </details>
+          </details>
       placeholder: "e.g., 123456"
     validations:
       required: true
