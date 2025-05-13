@@ -5,6 +5,7 @@ labels:
   - "help wanted"
 assignees: []
 body:
+
   - type: input
     id: release-id
     attributes:
