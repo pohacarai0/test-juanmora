@@ -6,11 +6,11 @@ labels:
 assignees: []
 body:
 
-  - type: input
-    id: release-id
-    attributes:
-      label: "Release ID"
-      description: |
+    - type: input
+      id: release-id
+      attributes:
+        label: "Release ID"
+        description: |
         
         <details>
         <summary>❓ Click here to see where to find this information</summary>
