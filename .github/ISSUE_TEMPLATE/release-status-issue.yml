@@ -10,7 +10,7 @@ body:
     attributes:
       label: "Release ID"
       description: |
-        Provide the **id of the delivery bundle** containing the delivery that is failing.
+        Provide the **Release ID**.
 
         <details>
         <summary>❓ Click here to see where to find this information</summary>
@@ -24,11 +24,11 @@ body:
       required: true
 
   - type: input
-    id: db-id # Changed from release-id to db-id as it was duplicated, assuming this was intended for Delivery Bundle ID
+    id: db-id
     attributes:
       label: "Delivery Bundle ID"
       description: |
-        Provide the **id of the delivery bundle** containing the delivery that is failing. # Note: This description is identical to the one for 'release-id'. You might want to differentiate them.
+       Provide the **Delivery Bundle ID**.
 
         <details>
         <summary>❓ Click here to see where to find this information</summary>
@@ -37,7 +37,7 @@ body:
 
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
-      placeholder: "e.g., 123456" # Note: Same placeholder.
+      placeholder: "e.g., 123456"
     validations:
       required: true
 
@@ -74,8 +74,8 @@ body:
   - type: textarea
     id: observed-issue # Corrected what seemed like a typo from "VErify the Deliveries" label to a more suitable ID
     attributes:
-      label: "Observed Issue / Discrepancy" # Changed label from "VErify the Deliveries"
-      description: "Describe the problem. e.g., System shows 'Live' but release not found on Spotify; Status stuck on 'Processing' for 3 days; Received 'Error' status with no details. Statuses will normally reflect information from the individual deliveries contained within a Delivery Bundle."
+      label: "Verify Deliveries" 
+      description: "Normally, the status will reflect the statuses of it's individual deliveries. For example, if a track has been taken down from YTM but not from KNM, would still shows as taken-down."
       placeholder: "e.g., System shows 'Live' but release not found on Spotify..."
     validations:
       required: true
