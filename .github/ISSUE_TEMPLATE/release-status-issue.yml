@@ -1,4 +1,4 @@
-name: "Release Status Issue"
+name: "🚦 Release Status Issue"
 description: "Use this form if a specific release has an incorrect status on app/admin"
 title: "[RELEASE STATUS]: Incorrect status on Release [Release ID]"
 labels:
@@ -23,29 +23,58 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: current-expected-status
+    - type: input
+    id: deliverybundle-id
     attributes:
-      label: "Current Displayed/Expected Status in System"
-      description: "What status does our system currently show for this release, or what do you expect it to be?"
+      label: "Delivery Bundle ID"
+      description: |
+        
+        <details>
+        <summary>❓ Click here to see where to find this information</summary>
+
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
+        
+        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
+        </details>
+      placeholder: "e.g., 123456"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: current-status
+    attributes:
+      label: "Current Displayed Status in System"
+      description: "What status does our system currently show for this release?"
       options:
-        - "Submitted"
-        - "Processing/Ingestion"
-        - "Live"
-        - "Takedown Pending"
-        - "Takedown Complete"
-        - "Error/Failed"
-        - "Rejected"
-        - "Action Required"
-        - "Unknown/Not Found"
+        - "In Delivery"
+        - "Delivered"
+        - "Takedown Processing"
+        - "Open"
+        - "Cancelled"
+        - "Feedback Required"
     validations:
       required: false
+
+    - type: dropdown
+    id: expected-status
+    attributes:
+      label: "Expected Status"
+      description: "What status should have instead?"
+      options:
+        - "In Delivery"
+        - "Delivered"
+        - "Takedown Processing"
+        - "Open"
+        - "Cancelled"
+        - "Feedback Required"
+    validations:
+      required: false    
 
   - type: textarea
     id: observed-issue
     attributes:
-      label: "Observed Status / Issue Description"
-      description: "Describe the issue or what you observe regarding the release's status."
+      label: "VErify the Deliveries"
+      description: "Statuses will normally reflect information from the individual deliveries contained within a Delivery Bundle"
       placeholder: "e.g., System shows 'Live' but release not found on Spotify; Status stuck on 'Processing' for 3 days; Received 'Error' status with no details."
     validations:
       required: true
