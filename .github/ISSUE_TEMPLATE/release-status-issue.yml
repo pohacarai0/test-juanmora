@@ -13,10 +13,11 @@ body:
         **Please provide details about the release status you are inquiring about or having issues with.**
 
   - type: input
-    id: release-id-upc
+    id: release-id
     attributes:
-      label: "Release Name / ID / UPC/EAN"
-      description: "The unique identifier for the release."
+      label: "Release ID"
+      description: |
+        
         <details>
         <summary>❓ Click here to see where to find this information</summary>
 
@@ -24,7 +25,7 @@ body:
         
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
-      placeholder: "e.g., My EP / R_456def / 198007654321"
+      placeholder: "e.g., 123456"
     validations:
       required: true
 
