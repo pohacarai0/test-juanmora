@@ -99,15 +99,6 @@ body:
     validations:
       required: false
 
-  - type: input
-    id: reporter-slack-username
-    attributes:
-      label: "Reporter Slack Username (from v4soldiers)"
-      description: "Your Slack username for follow-up questions."
-      placeholder: "@yourname"
-    validations:
-      required: true
-
   - type: textarea
     id: additional-context
     attributes:
