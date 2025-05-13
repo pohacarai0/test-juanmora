@@ -10,7 +10,7 @@ body:
       id: release-id
       attributes:
         label: "Release ID"
-        description: |
+        description:
         <details>
         <summary>❓ Click here to see where to find this information</summary>
 
