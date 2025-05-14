@@ -22,7 +22,7 @@ Found something broken or not working as expected? Please let us know!
     * **Steps to Reproduce:** This is super important! Tell us the *exact* steps someone else can follow to see the bug too. (Example: 1. Go to page X. 2. Click button Y. 3. See error Z.)
     * **Expected Behavior:** What *should* have happened?
     * **Screenshots/Videos:** A picture is worth a thousand words! If you can, please add a screenshot or even a short screen recording (you can link to services like Loom or just upload the image). 📸
-    * **Environment:** Information like browser (Chrome, Firefox, etc.) can sometimes help.
+    * **Environment:** Staging bugs are definitely less painful to our users but reporting them as soon as we saw it there will help them not reach Production, where they would indeed bother our users.
 4.  **Submit!** Once you've filled everything out, click "Submit new issue".
 
 **Why are the details important?** 🤔
@@ -30,7 +30,7 @@ The more information you provide upfront (like clear steps, what you expected, a
 
 ## ✨ Feature Requests or Ideas?
 
-While the main focus here is bugs, if you have ideas for new features or improvements based on customer feedback, feel free to create an issue as well! If we add a specific "Feature Request" template later, please use that. Otherwise, use the general "Bug Report" template for now and make it clear it's a suggestion.
+The main focus here is bugs, if you have ideas for new features or improvements based on customer feedback, feel free to raise awareness via the Idea-bank.
 
 ---
 
