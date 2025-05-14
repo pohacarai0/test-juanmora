@@ -9,7 +9,8 @@ body:
     attributes:
       value: |
         Thank you for taking the time to fill out this bug report! 
-        Please provide as much detail as possible to help us understand and resolve the issue quickly. The more information you give us, the faster we can help!
+        Please provide as much detail as possible to help us understand and resolve the issue quickly. 
+        The more information you give us, the faster we can help!
 
   - type: dropdown
     id: environment
@@ -51,7 +52,7 @@ body:
     attributes:
       label: "Expected Behavior"
       description: "What did you expect to happen after performing the steps above?"
-      placeholder: "e.g., Invoice shopuld have affiliate discount applied."
+      placeholder: "e.g., Invoice should have affiliate discount applied."
     validations:
       required: true
 
@@ -80,9 +81,7 @@ body:
       description: "If this bug seems specific to a certain setup, please provide details."
       placeholder: |
         - OS: [e.g., Windows 11, macOS Ventura, Android 13, iOS 16]
-        - Browser & Version: [e.g., Chrome 124, Firefox 123, Safari 17.0]
-        - App Version: [e.g., Internal Tool v1.2, Mobile App v3.0.1]
-        - Any specific browser extensions enabled?
+        - Device
     validations:
       required: false
 
