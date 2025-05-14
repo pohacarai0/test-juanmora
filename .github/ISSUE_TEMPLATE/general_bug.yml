@@ -24,6 +24,24 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: customer-info
+    attributes:
+      label: "Customer Info (if applicable)"
+      description: "If this bug was reported by or specifically affects a customer, please provide their customer ID"
+      placeholder: "e.g., Customer ID 123456"
+    validations:
+      required: false
+
+  - type: input
+    id: related-resources
+    attributes:
+      label: "Related Resource IDs (if applicable)"
+      description: "Provide any relevant IDs associated with this bug, such as Track ID, Delivery Bundle ID, User ID (if different from customer), Order ID, specific URL, etc."
+      placeholder: "e.g., Track ID: 98765, Delivery Bundle ID: 54321"
+    validations:
+      required: false      
+
   - type: textarea
     id: bug-description
     attributes:
@@ -56,24 +74,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: customer-info
-    attributes:
-      label: "Customer Info (if applicable)"
-      description: "If this bug was reported by or specifically affects a customer, please provide their customer ID"
-      placeholder: "e.g., Customer ID 123456"
-    validations:
-      required: false
-
-  - type: input
-    id: related-resources
-    attributes:
-      label: "Related Resource IDs (if applicable)"
-      description: "Provide any relevant IDs associated with this bug, such as Track ID, Delivery Bundle ID, User ID (if different from customer), Order ID, specific URL, etc."
-      placeholder: "e.g., Track ID: 98765, Delivery Bundle ID: 54321"
-    validations:
-      required: false
-
   - type: textarea
     id: system-details
     attributes:
@@ -91,10 +91,10 @@ body:
       label: "Impact / Severity (Optional)"
       description: "How severe is this bug from your perspective? This helps us prioritize."
       options:
-        - "**Low** - Minor cosmetic issue or inconvenience with an easy workaround."
+        - "Low - Minor cosmetic issue or inconvenience with an easy workaround."
         - "Medium - Affects some functionality but a workaround exists; causes some frustration."
-        - "High - Significantly impairs functionality, difficult or no workaround; causes major frustration or blocks a task for some users."
-        - "Critical - Blocks critical functionality for many/all users, potential data loss, security vulnerability."
+        - "High - Causes major frustration or blocks a task for some users; Difficult or no workaround"
+        - "Critical - Blocks critical functionality for many/all users; security vulnerability."
     validations:
       required: false
 
