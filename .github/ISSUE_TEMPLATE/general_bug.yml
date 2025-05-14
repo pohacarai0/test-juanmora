@@ -1,0 +1,112 @@
+name: "🐞 General Bug Report"
+description: "Report a reproducible bug or unexpected issue in the platform."
+title: "[BUG] What is broken?" # Suggested title for the issue
+labels: ["bug", "needs-triage"]              # Default labels to apply
+assignees: []                                # Optional: assign to someone by default
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report! 
+        Please provide as much detail as possible to help us understand and resolve the issue quickly. The more information you give us, the faster we can help!
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: "Where did you encounter this bug?"
+      multiple: true
+      options:
+        - Production
+        - Staging
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "Bug Description"
+      description: "Please provide a clear and concise description of what the bug is and what you actually observed happening."
+      placeholder: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide detailed, step-by-step instructions on how to reproduce this bug."
+      placeholder: |
+        1. Impersonate customer xyz 
+        2. Click on the 'Account".
+        3. Go to 'Order Overview'.
+        4. Open invoice xyz.
+        5. Discountys are incorrectly shown.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen after performing the steps above?"
+      placeholder: "e.g., Invoice shopuld have affiliate discount applied."
+    validations:
+      required: true
+
+  - type: input
+    id: customer-info
+    attributes:
+      label: "Customer Info (if applicable)"
+      description: "If this bug was reported by or specifically affects a customer, please provide their customer ID"
+      placeholder: "e.g., Customer ID 123456"
+    validations:
+      required: false
+
+  - type: input
+    id: related-resources
+    attributes:
+      label: "Related Resource IDs (if applicable)"
+      description: "Provide any relevant IDs associated with this bug, such as Track ID, Delivery Bundle ID, User ID (if different from customer), Order ID, specific URL, etc."
+      placeholder: "e.g., Track ID: 98765, Delivery Bundle ID: 54321"
+    validations:
+      required: false
+
+  - type: textarea
+    id: system-details
+    attributes:
+      label: "System/Environment Details (if relevant)"
+      description: "If this bug seems specific to a certain setup, please provide details."
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS Ventura, Android 13, iOS 16]
+        - Browser & Version: [e.g., Chrome 124, Firefox 123, Safari 17.0]
+        - App Version: [e.g., Internal Tool v1.2, Mobile App v3.0.1]
+        - Any specific browser extensions enabled?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Impact / Severity (Optional)"
+      description: "How severe is this bug from your perspective? This helps us prioritize."
+      options:
+        - "Low - Minor cosmetic issue or inconvenience with an easy workaround."
+        - "Medium - Affects some functionality but a workaround exists; causes some frustration."
+        - "High - Significantly impairs functionality, difficult or no workaround; causes major frustration or blocks a task for some users."
+        - "Critical - Blocks critical functionality for many/all users, potential data loss, security vulnerability."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context or Screenshots"
+      description: |
+        Add any other information, context, or history about the problem here. 
+        **You can drag and drop screenshots directly into this text area.**
+        Please include the full text of any error messages if you see them.
+      placeholder: "e.g., This started happening after the platform update on YYYY-MM-DD. Error message text: 'Transaction failed due to X.' This is the third customer reporting this today."
+    validations:
+      required: false
