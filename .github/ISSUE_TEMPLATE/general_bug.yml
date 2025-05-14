@@ -91,7 +91,7 @@ body:
       label: "Impact / Severity (Optional)"
       description: "How severe is this bug from your perspective? This helps us prioritize."
       options:
-        - "Low - Minor cosmetic issue or inconvenience with an easy workaround."
+        - "**Low** - Minor cosmetic issue or inconvenience with an easy workaround."
         - "Medium - Affects some functionality but a workaround exists; causes some frustration."
         - "High - Significantly impairs functionality, difficult or no workaround; causes major frustration or blocks a task for some users."
         - "Critical - Blocks critical functionality for many/all users, potential data loss, security vulnerability."
