@@ -54,7 +54,7 @@ body:
         - "Cancelled"
         - "Feedback Required"
     validations:
-      required: false # Changed to false as it's a 'current' status query, might not always be applicable to be 'required'
+      required: false
 
   - type: dropdown
     id: expected-status
@@ -69,40 +69,13 @@ body:
         - "Cancelled"
         - "Feedback Required"
     validations:
-      required: false # Changed to false, an expected status might not always be known or required for an initial report
+      required: false
 
   - type: textarea
-    id: observed-issue # Corrected what seemed like a typo from "VErify the Deliveries" label to a more suitable ID
+    id: observed-issue
     attributes:
-      label: "Verify Deliveries" 
-      description: "Normally, the status will reflect the statuses of it's individual deliveries. For example, if a track has been taken down from YTM but not from KNM, would still shows as taken-down."
+      label: "Verify Deliveries and add details" 
+      description: "Normally, the status will reflect the statuses of it's individual deliveries. For example, if a track has been taken down from YTM but not from KNM, would still shows as taken-down. Paste here the delivery id and give more context about the issue."
       placeholder: "e.g., System shows 'Live' but release not found on Spotify..."
     validations:
       required: true
-
-  - type: input
-    id: specific-platforms
-    attributes:
-      label: "Specific Platform(s) (if issue is platform-dependent)"
-      description: "If the issue is only on certain DSPs, list them here."
-      placeholder: "e.g., Spotify, Deezer"
-    validations:
-      required: false
-
-  - type: input
-    id: submission-date
-    attributes:
-      label: "Date of Submission / Last Known Status Update"
-      description: "When was the release submitted or when did the status last change?"
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: "Additional Context / Screenshots"
-      description: "e.g., Link to release on DSP if found, screenshots of error messages."
-      placeholder: "Add any other relevant details or links here." # Added a placeholder
-    validations:
-      required: false
