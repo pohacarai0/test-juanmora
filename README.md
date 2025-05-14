@@ -4,15 +4,11 @@ Welcome to the `iMusicianOps/desk` repository!
 
 ## What is This Project?
 
-**(➡️ You need to fill this part in! ⬅️)**
-*Example: This repository is used by the iMusician Operations team to track and manage internal tasks, report platform bugs, and coordinate support efforts related to our main platform.*
+This repository is used by the iMusician Operations team to track and manage internal tasks, report platform bugs, and coordinate support efforts related to our main platform.*
 
 ## Key Goals / Features
 
-* **(Example) Tracking platform bugs reported by internal teams.**
-* **(Example) Managing feature requests for internal tools.**
-* **(Example) Centralizing documentation for operational procedures.**
-    *(Adjust these to reflect the actual goals of your repository)*
+* **Tracking platform bugs reported by internal teams.**
 
 ## 📚 Latest Feature Documentation
 
@@ -25,8 +21,6 @@ To help you understand the latest updates and determine if an issue you're seein
     * [How to use the new Cheetah reporting tool](https://docs.google.com/document/d/your-doc-id-here)
 * **Update Zebra (Live since March 2025):**
     * [Understanding the Zebra Workflow Adjustments](https://your-internal-sharepoint.com/zebra-workflow)
-
-*(➡️ Remember to replace these with actual links and project names! You can add or remove projects as needed. Keep this list updated as new features roll out.)*
 
 ## 📄 How to Report Bugs or Suggest Improvements
 
@@ -43,4 +37,3 @@ If you still believe you've found a bug, or if you have an idea for an improveme
 
 ---
 
-*If you have other sections you think would be helpful, like "Who to contact for help?" or "Links to related tools," feel free to add them!*
