@@ -19,10 +19,9 @@ To help you understand the latest updates and determine if an issue you're seein
 
 Before reporting, please quickly check the **[Latest Feature Documentation](#-latest-feature-documentation)** above to see if the behavior you're observing is part of a recent update.
 
-If you still believe you've found a bug, or if you have an idea for an improvement:
+If you still believe you've found a bug:
 
 * **Found a bug?** 🐞 Please help us by reporting it!
-* **Have an idea for an improvement?** ✨ We'd love to hear it! 
 
 ➡️ **To report an issue or suggest a feature, please [create a new issue here](https://github.com/iMusicianOps/desk/issues/new/choose).**
 
