@@ -13,6 +13,9 @@ This repository is used by the iMusician Operations team to track and manage int
 ## 📄 How to Report Bugs
 
 * **Found a bug?** 🐞 Please help us by reporting it!
+We have several templates .... 
+* Template 1: hfsdufh sdfhds if
+*  template 2: ufhdsufhu 
 
 ➡️ **To report a bug, please [create a new ticket here](https://github.com/iMusicianOps/desk/issues/new/choose).**
 
