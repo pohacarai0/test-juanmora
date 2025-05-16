@@ -6,9 +6,12 @@ Welcome to the `iMusicianOps/desk` repository!
 
 This repository is used by the iMusician Operations team to track and manage internal tasks, report platform bugs, and coordinate support efforts related to our main platform.
 
-## Key Goals / Features
+## Key Goals
 
 * **Tracking platform bugs reported by internal teams.**
+
+## Bug or Feature? 
+eExplanation about difference between both. If bug, here. If not, potentially form made by Kathy
 
 ## 📄 How to Report Bugs
 
@@ -17,7 +20,7 @@ We have several templates ....
 * Template 1: hfsdufh sdfhds if
 *  template 2: ufhdsufhu 
 
-➡️ **To report a bug, please [create a new ticket here](https://github.com/iMusicianOps/desk/issues/new/choose).**
+➡️ **To report a bug, please [click here to create a new ticket](https://github.com/iMusicianOps/desk/issues/new/choose).**
 
 📖 We have specific guidelines to help you create effective reports. Please take a moment to read our **[Contribution Guidelines](CONTRIBUTING.md)** before submitting your first ticket. This helps us understand the problem faster!
 
