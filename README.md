@@ -10,17 +10,10 @@ This repository is used by the iMusician Operations team to track and manage int
 
 * **Tracking platform bugs reported by internal teams.**
 
-## 📚 Latest Feature Documentation
+## 📚 Latest Feature Documentation ### delete, too many different sources, could overcomplicate things
 
 To help you understand the latest updates and determine if an issue you're seeing might be a new feature working as intended, please check the documentation for recent projects:
 
-* **Reference Mastering (Deployed April 2025):**
-    * [Reference Mastering - Product Brief]([https://your-company-wiki.com/phoenix-dashboard-guide](https://docs.google.com/document/d/19FW5TmwYA-9bTtq3kBgdFGZTcpfL9o9F1iXV1wtXg9I/edit?tab=t.0))
-    * [Technical Overview of Phoenix Changes](https://your-company-wiki.com/phoenix-tech-overview)
-* **Future Subs (June 2024):**
-    * [Future Subs 2024 - Product Brief](https://docs.google.com/document/d/1Q6vFOBEc7jrM4Gi9-yYEySOBI93on-af5qD30JRr8Ok/edit?tab=t.0#heading=h.1tomqwpl561p)
-* **Tiered Subs (March 2024):**
-    * [Tiered Subscription BOT](https://docs.google.com/document/d/10OeeSwJpYDb8eji6h4exD7KGK9fW7t2zCPF14u5vJi8/edit?tab=t.0)
 
 ## 📄 How to Report Bugs or Suggest Improvements
 
