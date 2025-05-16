@@ -23,7 +23,7 @@ If you still believe you've found a bug:
 
 * **Found a bug?** 🐞 Please help us by reporting it!
 
-➡️ **To report an issue or suggest a feature, please [create a new issue here](https://github.com/iMusicianOps/desk/issues/new/choose).**
+➡️ **To report an issue, please [create a new issue here](https://github.com/iMusicianOps/desk/issues/new/choose).**
 
 📖 We have specific guidelines to help you create effective reports. Please take a moment to read our **[Contribution Guidelines](CONTRIBUTING.md)** before submitting your first issue. This helps us understand the problem faster!
 
