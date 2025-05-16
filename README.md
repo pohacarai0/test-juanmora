@@ -22,6 +22,7 @@ We have several templates ....
 
 ➡️ **To report a bug, please [click here to create a new ticket](https://github.com/iMusicianOps/desk/issues/new/choose).**
 
+Potential place for feedback form (bottom of each template, specific form) 
 📖 We have specific guidelines to help you create effective reports. Please take a moment to read our **[Contribution Guidelines](CONTRIBUTING.md)** before submitting your first ticket. This helps us understand the problem faster!
 
 ---
