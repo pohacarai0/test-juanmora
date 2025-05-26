@@ -1,4 +1,4 @@
-name: "🚚 Delivery Status Issue"
+name: "⚠️ Delivery Status Issue"
 description: "Use this when there is an issue related to the delivery status/take-down of a release."
 title: "[DELIVERY ISSUE]: Release [Release ID]"
 labels:
