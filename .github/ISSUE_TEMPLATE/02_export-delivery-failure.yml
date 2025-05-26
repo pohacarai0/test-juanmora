@@ -63,19 +63,20 @@ body:
   - type: markdown
     attributes:
       value: |
+        
         This information is the minimum we need, but you might be able to get more information about the root of the issue by checking the deliveries within the delivery bundle mentioned above.
         <details>
-        <summary>❓ Click here to see where to find this information</summary>
+        <summary>❓ How to find?</summary>
 
-        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/FqH91x9y/image.png)
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/qFJWWSr4/image.png)
         
-        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
+        *See if there is some delivery with a status such as "aggregator rejected" or not completed*
         </details>
   - type: checkboxes
     id: handler-affected
     attributes:
       label: "Handler affected"
-      description: "Select the ones that are failing"
+      description: "If you do find some delivery failing, select which"
       options:
         - label: "KNM (Kontor)"
         - label: "YTM (Aspera)"
@@ -92,35 +93,28 @@ body:
         Provide the **id of the delivery** that is failing.
 
         <details>
-        <summary>❓ Click here to see where to find this information</summary>
+        <summary>❓ What Id is this?</summary>
 
-        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
+        ![Screenshot showing location of Delivery ID](https://i.ibb.co/yF6tHCjq/image.png)
         
-        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
       placeholder: "e.g., 123456"
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: error-message
     attributes:
       label: "Error Message Received (if any) 📩" # Unicode emoji
       description: |
-        Please copy and paste the **exact error message**.
-        If no manifest file is available please write 'No manifest'.
+        Please copy and paste the **exact error message**, if you see any, inside this delivery.
+       
         ```text
         Example: "DOMDocument::schemaValidate(): Element 'c_line': [facet 'pattern'] 
         The value '2020 ' is not accepted by the pattern '((19[0-9][0-9])|(20[0-9][0-9])) [^-\s].*'."
         ```
-        <details>
-        <summary>❓ Click here to see where to find this information</summary>
 
-        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
-        
-        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
-        </details>
-      placeholder: "e.g., 'Failed due to metadata mismatch: track 3 artist name'"
+      placeholder: ""
     validations:
       required: false
 
