@@ -1,0 +1,82 @@
+name: "🚚 Asset Move Request"
+description: "Request to move release(s) from one customer account to another."
+title: "[MOVE REQUEST] Release(s) [Enter Release ID(s)] from Customer [Origin ID] to [Destination ID]"
+labels: ["asset-move", "needs-review", "manual-intervention"] # Suggested labels
+assignees: [] # Optional: default assignee
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this form carefully to request the movement of release(s) between customer accounts. 
+        Ensure all information is accurate to prevent delays.
+
+  - type: textarea # Using textarea in case multiple releases are moved at once
+    id: release-ids
+    attributes:
+      label: "💿 Release ID(s) to be Moved"
+      description: |
+        List the ID(s) of the release(s) that need to be moved. If moving multiple releases, please list each ID on a new line or separate them with commas.
+
+        <details>
+        <summary>❓ Click here for help finding the Release ID</summary>
+
+        ![Screenshot showing example location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png) 
+        *(This is a placeholder image. Replace with your actual helper image URL if different.)*
+
+        *You can usually find the Release ID on the main details page for the release in our platform, often located near the release title or in an 'Identifiers' section.*
+        </details>
+      placeholder: |
+        e.g., 123456
+        789012 
+        (One ID per line or comma-separated)
+    validations:
+      required: true
+
+  - type: input
+    id: origin-customer-id
+    attributes:
+      label: "👤 Origin Customer ID"
+      description: "Enter the ID of the customer account FROM WHICH the release(s) will be moved."
+      placeholder: "e.g., CUST1001"
+    validations:
+      required: true
+
+  - type: input
+    id: destination-customer-id
+    attributes:
+      label: "🎯 Destination Customer ID"
+      description: "Enter the ID of the customer account TO WHICH the release(s) will be moved."
+      placeholder: "e.g., CUST2002"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: track-verification
+    attributes:
+      label: "⚠️ Important Verification"
+      description: "Please confirm the following before submitting the request. This is a critical step to prevent duplicate content issues."
+      options:
+        - label: "I have verified that the tracks within the release(s) being moved are **NOT** present in other active releases belonging to the **origin customer** (apart from the specific release(s) listed above for this move operation)."
+          required: true # This makes ticking THIS specific checkbox mandatory
+    validations:
+      # No top-level 'required' for the checkbox group itself, as the requirement is on the option.
+      # However, if you only have one option and it's required, the group effectively becomes required.
+
+  - type: textarea
+    id: reason-for-move
+    attributes:
+      label: "Reason for Move (Optional)"
+      description: "Briefly explain why this asset move is being requested. This helps us understand the context."
+      placeholder: "e.g., Original upload to incorrect customer account by user error; Artist catalog transfer as per signed agreement; Consolidating artist's multiple accounts."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context or Notes (Optional)"
+      description: "Include any other relevant information, links to support tickets, or special instructions for this move request."
+      placeholder: "e.g., Support ticket ID: #TICKET-789. Please process after 5 PM. Destination account is new."
+    validations:
+      required: false
