@@ -74,18 +74,6 @@ body:
         
         *See if there is some delivery with a status such as "aggregator rejected" or not completed*
         </details>
-  - type: checkboxes
-    id: handler-affected
-    attributes:
-      label: "Handler affected"
-      description: "If you do find some delivery failing, select which"
-      options:
-        - label: "KNM (Kontor)"
-        - label: "YTM (Aspera)"
-        - label: "YTM (Lambda)"        
-        - label: "CID"        
-    validations:
-      required: false 
 
   - type: input
     id: delivery-id
@@ -103,6 +91,19 @@ body:
       placeholder: "e.g., 123456"
     validations:
       required: false
+
+  - type: checkboxes
+    id: handler-affected
+    attributes:
+      label: "Handler affected"
+      description: "If you do find some delivery failing, select which"
+      options:
+        - label: "KNM (Kontor)"
+        - label: "YTM (Aspera)"
+        - label: "YTM (Lambda)"        
+        - label: "CID"        
+    validations:
+      required: false 
 
   - type: dropdown
     id: current-status-delivery
