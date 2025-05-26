@@ -1,6 +1,6 @@
-name: "🚚 Export/Delivery Failure Report"
-description: "Report an issue related to a failure in exporting a release, either delivering or taking-down."
-title: "[DELIVERY FAILURE]: Release [Release ID] failed to export/deliver"
+name: "🚚 Delivery Status Issue"
+description: "Use this when there is an issue related to the delivery status/take-down of a release."
+title: "[DELIVERY ISSUE]: Release [Release ID]"
 labels:
   - "needs-triage"
 assignees: []
@@ -9,7 +9,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please provide as much detail as possible about the export or delivery failure. This will help us investigate and resolve the issue quickly!
 
         > ℹ️ **Tip:** The more precise the information, the faster we can help.
 
@@ -18,12 +17,12 @@ body:
     attributes:
       label: "Delivery Bundle ID"
       description: |
-        Provide the **id of the delivery bundle** containing the delivery that is failing.
+        Provide the **id of the delivery bundle** that is failing.
 
         <details>
         <summary>❓ Click here to see where to find this information</summary>
 
-        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png)
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/FqH91x9y/image.png)
         
         *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
         </details>
@@ -31,6 +30,47 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: current-status
+    attributes:
+      label: "Current Displayed Status in System"
+      description: "What status does our system currently show for this release?"
+      options:
+        - "In Delivery"
+        - "Delivered"
+        - "Takedown Processing"
+        - "Open"
+        - "Cancelled"
+        - "Feedback Required"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: expected-status
+    attributes:
+      label: "Expected Status"
+      description: "What status should it have instead?"
+      options:
+        - "In Delivery"
+        - "Delivered"
+        - "Takedown Processing"
+        - "Open"
+        - "Cancelled"
+        - "Feedback Required"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        This information is the minimum we need, but you might be able to get more information about the root of the issue by checking the deliveries within the delivery bundle mentioned above.
+        <details>
+        <summary>❓ Click here to see where to find this information</summary>
+
+        ![Screenshot showing location of Release ID/UPC](https://i.ibb.co/FqH91x9y/image.png)
+        
+        *You can usually find the Release ID or UPC on the main details page for your release in our platform, often located near the release title or in the 'Identifiers' section.*
+        </details>
   - type: checkboxes
     id: handler-affected
     attributes:
