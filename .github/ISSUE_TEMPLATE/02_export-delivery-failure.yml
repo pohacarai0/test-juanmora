@@ -114,7 +114,7 @@ body:
         The value '2020 ' is not accepted by the pattern '((19[0-9][0-9])|(20[0-9][0-9])) [^-\s].*'."
         ```
 
-      placeholder: ""
+      placeholder: "Error message"
     validations:
       required: false
 
