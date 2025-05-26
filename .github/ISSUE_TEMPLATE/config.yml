@@ -1,22 +1,3 @@
 # .github/ISSUE_TEMPLATE/config.yml
 
-# Set to false to disable the ability to open blank issues.
-# Users will be required to choose one of your defined templates.
 blank_issues_enabled: false
-
-# Add links that will appear on the template chooser page.
-# This is a good place to link to your CONTRIBUTING.md, a Wiki page explaining templates,
-# or an internal chat channel for questions.
-contact_links:
-  - name: "🤔 Which Template Should I Use? Click here for a guide!"
-    url: "https://github.com/iMusicianOps/desk/wiki/Choosing-the-Right-Issue-Template" # IMPORTANT: Create this Wiki page if you use this link!
-    about: "Read our guide for help selecting the correct report type."
-
-  - name: "💬 General Questions (Internal Chat)"
-    url: "https://your-company-internal-chat.com/channel/support-ops" # Replace with your actual internal chat link
-    about: "For quick questions not related to submitting a formal issue through a template."
-
-  # You can add more links if needed, for example, to your main CONTRIBUTING.md
-  # - name: "📖 Read our Full Contribution Guidelines"
-  #   url: "https://github.com/iMusicianOps/desk/blob/main/CONTRIBUTING.md"
-  #   about: "General guidelines for contributing."
