@@ -1,7 +1,7 @@
 name: "🚚 Asset Move Request"
 description: "Request to move release(s) from one customer account to another."
-title: "[MOVE REQUEST] Release(s) [Enter Release ID(s)] from Customer [Origin ID] to [Destination ID]"
-labels: ["asset-move", "needs-review", "manual-intervention"] # Suggested labels
+title: "[ASSET MOVE REQUEST] From Customer [Origin ID] to [Destination ID]"
+labels: ["asset-move", "needs-triage",] # Suggested labels
 assignees: [] # Optional: default assignee
 
 body:
@@ -68,7 +68,7 @@ body:
     attributes:
       label: "Reason for Move (Optional)"
       description: "Briefly explain why this asset move is being requested. This helps us understand the context."
-      placeholder: "e.g., Original upload to incorrect customer account by user error; Artist catalog transfer as per signed agreement; Consolidating artist's multiple accounts."
+      placeholder: "Reason of move"
     validations:
       required: false
 
@@ -77,6 +77,6 @@ body:
     attributes:
       label: "Additional Context or Notes (Optional)"
       description: "Include any other relevant information, links to support tickets, or special instructions for this move request."
-      placeholder: "e.g., Support ticket ID: #TICKET-789. Please process after 5 PM. Destination account is new."
+      placeholder: "e.g., HS Ticket #123456"
     validations:
       required: false
