@@ -36,10 +36,11 @@ body:
       label: "Current Delivery Bundle Status"
       description: "What status does our system currently show for this bundle?"
       options:
+        - "Open"
+        - "Waiting for Payment"
+        - "Paid - In Quality Check"
         - "In Delivery"
         - "Delivered"
-        - "Takedown Processing"
-        - "Open"
         - "Cancelled"
         - "Feedback Required"
     validations:
@@ -51,13 +52,13 @@ body:
       label: "Expected/Wanted Delivery Bundle Status"
       description: "What status should it have instead?"
       options:
+        - "Open"
+        - "Waiting for Payment"
+        - "Paid - In Quality Check"
         - "In Delivery"
         - "Delivered"
-        - "Takedown Processing"
-        - "Open"
         - "Cancelled"
         - "Feedback Required"
-        - "Paid- In Quality Check"
     validations:
       required: false
 
@@ -109,12 +110,26 @@ body:
       label: "Current Displayed Status in System"
       description: "What status does our system currently show for this release?"
       options:
-        - "In Delivery"
-        - "Delivered"
-        - "Takedown Processing"
-        - "Open"
-        - "Cancelled"
-        - "Feedback Required"
+        - "NOT_APPROVED = 0"
+        - "APPROVED = 1"
+        - "EXPORT_PREPARATION_FAILED = 10"
+        - "EXPORT_READY = 11"
+        - "UPLOAD_FAILED = 12"
+        - "UPLOADED = 13"
+        - "UPLOAD_QUEUED = 14"
+        - "UPLOADED_RESOURCES = 15"
+        - "AGGREGATOR_CHECK_FAILED = 20"
+        - "AGGREGATOR_REJECTED = 21"
+        - "AGGREGATOR_ACCEPTED = 22"
+        - "REJECTED = 30"
+        - "CONFIRMED = 31"
+        - "FORCED_REDELIVERY = 32"
+        - "TAKEDOWN_REQUESTED = 33"
+        - "UPDATE_REQUESTED = 34"
+        - "CANCELED = 40"
+        - "WAITING_FOR_MUSIC_DELIVERY = 50"
+        - "UNKNOWN = 100"
+
     validations:
       required: false
 
@@ -124,12 +139,25 @@ body:
       label: "Expected Status"
       description: "What status should it have instead?"
       options:
-        - "In Delivery"
-        - "Delivered"
-        - "Takedown Processing"
-        - "Open"
-        - "Cancelled"
-        - "Feedback Required"
+        - "NOT_APPROVED = 0"
+        - "APPROVED = 1"
+        - "EXPORT_PREPARATION_FAILED = 10"
+        - "EXPORT_READY = 11"
+        - "UPLOAD_FAILED = 12"
+        - "UPLOADED = 13"
+        - "UPLOAD_QUEUED = 14"
+        - "UPLOADED_RESOURCES = 15"
+        - "AGGREGATOR_CHECK_FAILED = 20"
+        - "AGGREGATOR_REJECTED = 21"
+        - "AGGREGATOR_ACCEPTED = 22"
+        - "REJECTED = 30"
+        - "CONFIRMED = 31"
+        - "FORCED_REDELIVERY = 32"
+        - "TAKEDOWN_REQUESTED = 33"
+        - "UPDATE_REQUESTED = 34"
+        - "CANCELED = 40"
+        - "WAITING_FOR_MUSIC_DELIVERY = 50"
+        - "UNKNOWN = 100"
     validations:
       required: false
 
