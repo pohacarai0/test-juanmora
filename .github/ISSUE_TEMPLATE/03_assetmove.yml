@@ -25,7 +25,7 @@ body:
         </details>
       placeholder: |
         (One ID per line please)
-        e.g., 
+         
         123456
         789123
         987654
@@ -37,7 +37,7 @@ body:
     attributes:
       label: "👤 Origin Customer ID"
       description: "Enter the ID of the customer account FROM WHICH the release(s) will be moved."
-      placeholder: "e.g., CUST1001"
+      placeholder: "12345"
     validations:
       required: true
 
@@ -46,7 +46,7 @@ body:
     attributes:
       label: "🎯 Destination Customer ID"
       description: "Enter the ID of the customer account TO WHICH the release(s) will be moved."
-      placeholder: "e.g., CUST2002"
+      placeholder: "12345"
     validations:
       required: true
 
