@@ -50,7 +50,7 @@ body:
       description: "Check if perhaps our customer already created an account using the email address he wants us to modify his account to. 
       If that would be the case, ask him to first modify that to something else, so the address is 'available' "
       options:
-        - label: "There is no account created on our system using the e-mail provided at "'New' Email Address'" "
+        - label: "There is no account created on our system using the e-mail provided at 'New' Email Address "
           required: true
 
   - type: textarea
