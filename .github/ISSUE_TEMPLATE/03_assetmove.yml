@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out this form carefully to request the movement of release(s) between customer accounts. 
+        Please fill out this form carefully to request the transfer of release(s) between customer accounts. 
         Ensure all information is accurate to prevent delays.
 
   - type: textarea # Using textarea in case multiple releases are moved at once
@@ -16,20 +16,19 @@ body:
     attributes:
       label: "💿 Release ID(s) to be Moved"
       description: |
-        List the ID(s) of the release(s) that need to be moved. If moving multiple releases, please list each ID on a new line or separate them with commas.
+        List the ID(s) of the release(s) that need to be moved. If moving multiple releases, please list each ID on a new line.
 
         <details>
-        <summary>❓ Click here for help finding the Release ID</summary>
+        <summary>❓ Where to find the Release ID</summary>
 
-        ![Screenshot showing example location of Release ID/UPC](https://i.ibb.co/M12csLZ/image.png) 
-        *(This is a placeholder image. Replace with your actual helper image URL if different.)*
-
-        *You can usually find the Release ID on the main details page for the release in our platform, often located near the release title or in an 'Identifiers' section.*
+        ![Screenshot showing example location of Release ID/UPC](https://i.ibb.co/sJWh4mhN/image.png) 
         </details>
       placeholder: |
-        e.g., 123456
-        789012 
-        (One ID per line or comma-separated)
+        (One ID per line please)
+        e.g., 
+        123456
+        789123
+        987654
     validations:
       required: true
 
